@@ -2,7 +2,7 @@
   "name": "websiter",
   "private": true,
   "version": "0.0.1",
-  "homepage": "http://denzariu.github.io/websiter",
+  "homepage": "http://denzariu.github.io/websiter/",
   "type": "module",
   "scripts": {
     "dev": "vite",
