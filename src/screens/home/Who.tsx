@@ -1,6 +1,8 @@
 import { useState } from 'react'
-import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import Card from '../components/Card'
+import logo from '../../assets/logo.png'
+import Job from '../components/Job'
+
 
 const navigation = [
   { name: 'Home', href: '#home' },
@@ -32,73 +34,90 @@ export default function Who() {
         
         {/* Page Container  */}
         <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-56">
-          <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              Announcing our next round of funding.{' '}
-              <a href="#" className="font-semibold text-indigo-600">
-                <span className="absolute inset-0" aria-hidden="true" />
-                Read more <span aria-hidden="true">&rarr;</span>
-              </a>
+      
+          <div className='lg:max-w-xl'>
+            <div className='text-4xl text-left font-bold tracking-tight text-gray-900 sm:text-7xl'>
+              Who.
             </div>
+            <p className="mt-4 mx-2 text-lg leading-8 text-gray-600">
+              I blend creativity with technical expertise.
+              {/* I am a versatile developer, graphic designer & creator.  */}
+            </p>
+            {/* <p className="mt-4 mx-2 sm:mt-6 sm:mb-6 text-lg leading-8 text-gray-600">
+              Blending creativity with technical expertise, allowing me to excel in problem-solving and innovation.{' '} 
+              {/* I possess a keen eye for detail and thrive on tackling algorithmic challenges!  */}
+              {/* However, my interests vary in the fields of Multimedia, Crafts and Design. */}
+            {/* </p> */} 
           </div>
-          <div className="align-center gap-2 sm:flex ">
+          
+          <div className="mt-5 align-center justify-center flex-wrap sm:flex-nowrap gap-4 flex ">
             {/* Card */}
-            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-              <a href="#">
-                  <img className="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
-              </a>
-              <div className="p-5">
-                  <a href="#">
-                      <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-                  </a>
-                  <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                  <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                      Read more
-                      <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                      </svg>
-                  </a>
-              </div>
-            </div>
+            <Card
+              title='Software Engineer'
+              description='Educated at the Politehnica University of Bucharest, specialized in Computer Science & Systems Engineering.'
+              buttonText='See more'
+              image={logo}
+              buttonAction={()=>{console.log('press')}}
+            />
             {/* Card */}
-            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-              <a href="#">
-                  <img className="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
-              </a>
-              <div className="p-5">
-                  <a href="#">
-                      <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-                  </a>
-                  <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                  <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                      Read more
-                      <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                      </svg>
-                  </a>
-              </div>
-            </div>
+            <Card
+              title='Graphic Designer'
+              description='My forte lies in blending creativity with technical expertise, allowing me to excel in problem-solving and innovation.'
+              buttonText='See more'
+              image={logo}
+              buttonAction={()=>{console.log('press')}}
+            />
             {/* Card */}
-            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-              <a href="#">
-                  <img className="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
-              </a>
-              <div className="p-5">
-                  <a href="#">
-                      <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-                  </a>
-                  <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                  <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                      Read more
-                      <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                      </svg>
-                  </a>
-              </div>
-            </div>
+            <Card
+              title='Content Creator'
+              description='I possess a keen eye for detail and thrive on tackling algorithmic challenges, but my interests vary in the fields of Multimedia, Crafts and Design.'
+              buttonText='See more'
+              image={logo}
+              buttonAction={()=>{console.log('press')}}
+            />
 
           </div>
+
+          <div className='mt-20 text-4xl text-left font-bold tracking-tight text-gray-900 sm:text-5xl'>
+            Work Experience.
+          </div>
+          
+          <div className='mt-12 flex flex-col items-center justify-center'>
+            {/* Element */}
+            <Job
+              title='Software Engineer'
+              subtitle='Webhelp'
+              description={[
+                "   Provided the documentation and resolution of intricate technical problems faced by Google's clientele, leveraging the infrastructure within the Google Cloud Platform, notably Kubernetes, Compute Engine, among others.", 
+                "   Collaborated within a cross-functional team of over 20, to ensure seamless resolution and client satisfaction of over 87%."
+              ]}              
+              startToEnd='2023 Feb - 2023 Jun'
+            />
+            <Job
+              title='Salesforce Web Developer'
+              subtitle='Deloitte Digital'
+              description={[
+                "   Training was centered on Salesforce development and administration, held by a certified Salesforce expert, followed by internal training of APEX, LWCs, Batching & Redux.", 
+                "   I was part of a brand-new Salesforce SCRUM team, working for one of the global industry leaders. Our primary focus was optimizing the business customer experience by crafting tailored dashboards using APIs and Plugins.",
+                "   My expertise was frontend, with nearly 80% of UI dashboard pages created by myself, and backend development, amplifying the team's impact on customer-centric solutions"
+              ]}              
+              startToEnd='2021 Jun - 2021 Nov'
+            />
+            <Job
+              title='Trainee - Software Dev'
+              subtitle='OKAPI'
+              description={[
+                "   I've applied a comprehensive skill set in real-time project environments, such as application development, backend & frontend by efficiently communicating with my team, following workflows, organizing and optimizing my tasks.",
+                "   Became familiar with technologies such as Node, Express, Django, Wordpress, etc, tools such as Git, Figma, Postman and ticket managing systems."
+              ]}              
+              startToEnd='2020 Jun - 2021 Jan'
+            />
+          </div>
+          
         </div>
+
+
+        {/* Absolute elements (background) */}
         <div
           className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
           aria-hidden="true"
