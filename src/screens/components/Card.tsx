@@ -7,7 +7,7 @@ type CardProps = {
   buttonAction: () => void
 }
 
-function Card({title, description, image, buttonText, buttonAction}: CardProps) {
+function Card({title, description, image}: CardProps) {
 
 
   return (
@@ -15,7 +15,7 @@ function Card({title, description, image, buttonText, buttonAction}: CardProps) 
                     transition ease-in-out duration-300 hover:bg-gradient-to-tr from-gray-800 to-[#282646] hover:scale-105 hover:border-purple-900"
     >
       
-      <div className="p-5 h-full flex flex-col justify-between gap-2 ">
+      <div className="p-5 h-full flex flex-col justify-between ">
 
           <div className="">
             <a href="#" className="self-center flex-1">

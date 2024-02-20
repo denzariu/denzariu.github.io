@@ -1,18 +1,10 @@
-import { useState } from 'react'
 import Card from '../components/Card'
 import logo from '../../assets/logo.png'
 import Job from '../components/Job'
 
 
-const navigation = [
-  { name: 'Home', href: '#home' },
-  { name: 'Who', href: '#who' },
-  { name: 'What', href: '#what' },
-  { name: 'Why though?', href: '#why' },
-]
 
 export default function Who() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
     <div id="who" className="bg-slate-200">

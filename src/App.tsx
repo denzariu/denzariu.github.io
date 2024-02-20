@@ -1,10 +1,8 @@
-import { useState } from 'react'
 import Navigator from './screens/home/Navigator'
 import './App.css'
 import Who from './screens/home/Who'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
