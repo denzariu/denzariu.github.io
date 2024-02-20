@@ -12,16 +12,17 @@ function Card({title, description, image}: CardProps) {
 
   return (
     <div className="max-w-sm sm:flex-[0.34] border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 
+                    shadow-it 
                     transition ease-in-out duration-300 hover:bg-gradient-to-tr from-gray-800 to-[#282646] hover:scale-105 hover:border-purple-900"
     >
       
       <div className="p-5 h-full flex flex-col justify-between ">
 
           <div className="">
-            <a href="#" className="self-center flex-1">
+            <a className="self-center flex-1">
                 <img className="rounded-t-lg p-5 w-full" src={image} alt="" />
             </a>
-            <a href="#">
+            <a>
                 <h5 className="mb-2 text-2xl font-bold text-center tracking-tight text-gray-900 dark:text-white">
                   {title}
                 </h5>

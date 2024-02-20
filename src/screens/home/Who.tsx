@@ -1,6 +1,8 @@
 import Card from '../components/Card'
 import logo from '../../assets/logo.png'
 import Job from '../components/Job'
+import Skill from '../components/Skill'
+import { SVGS } from '../../assets/svgs'
 
 
 
@@ -106,12 +108,31 @@ export default function Who() {
             />
           </div>
           
+          {/* Skills */}
+          <div className='mt-8 flex justify-center flex-wrap gap-2'>
+            <Skill
+              logo={SVGS.react}
+            />
+            <Skill
+              logo={SVGS.figma}
+            />
+            <Skill
+              logo={SVGS.react}
+            />
+            <Skill
+              logo={SVGS.react}
+            />
+            <Skill
+              logo={SVGS.react}
+            />
+          </div>
         </div>
 
+        
 
         {/* Absolute elements (background) */}
         <div
-          className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+          className="absolute inset-x-0 top-[calc(100%-25rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-80rem)]"
           aria-hidden="true"
         >
           <div
