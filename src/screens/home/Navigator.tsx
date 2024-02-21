@@ -122,7 +122,7 @@ export default function Navigator() {
             </div>
           </div> */}
           <div className="flex flex-row text-left">
-            <div className="flex flex-col justify-start items-center mt-5">
+            <div className="flex flex-col justify-start items-center mt-3 sm:mt-5">
               <div className="w-5 h-6 rounded-full bg-[#915eff]"></div>
               <div className="w-1 h-full mb-1 bg-gradient-to-b from-purple-500 to-slate-200"></div>
             </div>
