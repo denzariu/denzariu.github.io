@@ -1,6 +1,10 @@
 import m_1 from '../../assets/image/p_mobile_1.png'
 import m_2 from '../../assets/image/p_mobile_2.png'
 import m_3 from '../../assets/image/p_mobile_3.png'
+import w_1 from '../../assets/image/p_web_1.png'
+import w_2 from '../../assets/image/p_web_2.png'
+import w_3 from '../../assets/image/p_web_3.png'
+
 import ImageCard from '../components/ImageCard'
 
 
@@ -35,14 +39,14 @@ function What() {
           </div>
         </div>
 
-        {/* Cards */}
+        {/* Cards - Mobile */}
         <div className="mx-auto max-w-4xl bg-gradient-to-br from-gray-800 to-[#36335e] rounded-lg">
-          <p className='relative  pb-3 mx-12 lg:mx-48 rounded-b-xl 
+          <p className='relative pb-3 mx-12 lg:mx-48 rounded-b-xl 
             text-4xl text-center font-bold tracking-tight bg-white text-gray-900 sm:text-5xl'
           >
             Mobile Dev
           </p>
-          <div className="mx-4 pb-[21rem] sm:pb-2 sm:mx-0 p-2 pt-4 align-center justify-center flex-wrap sm:flex-nowrap gap-2 flex">
+          <div className="mx-4 pb-[24rem] sm:pb-2 sm:mx-0 p-2 pt-4 align-center justify-center flex-wrap sm:flex-nowrap gap-2 flex">
             
             <ImageCard
               link='https://github.com/denzariu/zeldex'
@@ -59,6 +63,40 @@ function What() {
               image={m_3}
               desc='FitMe'
             />
+           
+          </div>
+        </div>
+
+        {/* Web Dev */}
+        <div className="mx-auto mt-20 max-w-4xl bg-gradient-to-br rounded-lg">
+          <p className='relative pb-3 mx-12 lg:mx-48 rounded-t-xl 
+            text-4xl text-center font-bold tracking-tight bg-gray-900 text-white sm:text-5xl'
+          >
+            Web Dev
+          </p>
+          <div className=" flex pb-[24rem] sm:pb-2 sm:mx-0 p-2 pt-4 align-center justify-center flex-wrap sm:flex-nowrap border-4 border-gray-900 rounded-lg gap-2">
+            
+            
+            <ImageCard
+              border
+              link='https://github.com/denzariu/Depodenz-Warehouse-Site'
+              image={w_2}
+              desc='DepoDenz'
+            />
+            <ImageCard
+              border
+              link='https://denzariu.github.io/'
+              image={w_3}
+              desc='Old Site'
+            />
+            
+            <ImageCard
+              border
+              link='https://denzariu.github.io/react_pokemon_app/'
+              image={w_1}
+              desc='PokeDenz'
+            />
+            
            
           </div>
         </div>
