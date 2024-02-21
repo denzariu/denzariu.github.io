@@ -14,7 +14,7 @@ export default function Navigator() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="bg-slate-200">
+    <div>
       <header className="absolute inset-x-0 top-0 z-50">
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
@@ -111,7 +111,7 @@ export default function Navigator() {
             }}
           />
         </div>
-        <div className="mx-auto max-w-2xl py-48 sm:py-64 lg:py-64 xl:py-64">
+        <div className="mx-auto max-w-2xl py-48 sm:py-64 lg:py-64 xl:py-72">
           {/* <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
               Announcing our next round of funding.{' '}
@@ -153,30 +153,6 @@ export default function Navigator() {
               </a>
             </div>
           </div>
-
-          {/* OLD DESIGN */}
-          {/* <div className="text-left xl:text-center">
-            <h1 className="text-6xl font-bold tracking-tight text-gray-900 sm:text-8xl">
-              Denis.
-               {/* Animate this 
-            </h1> 
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              {/* React Native | React | Typescript<br/><br/> 
-              I develop mobile & web apps, user interfaces, and anything that sparks some joy. 
-              {/* It's quite nice that you're actually looking through my projects and stuff. 
-            </p>
-            <div className="mt-10 flex items-center justify-start xl:justify-center gap-x-6">
-              <a
-                href="#why"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-                Why would I care
-              </a>
-              <a href="#who" className="text-sm font-semibold leading-6 text-gray-900">
-                Learn more <span aria-hidden="true">→</span>
-              </a>
-            </div>
-          </div> */}
 
         </div>
         <div

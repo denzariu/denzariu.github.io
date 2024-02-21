@@ -9,7 +9,7 @@ import { SVGS } from '../../assets/svgs'
 export default function Who() {
 
   return (
-    <div id="who" className="bg-slate-200">
+    <div id="who">
       
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div
@@ -30,7 +30,7 @@ export default function Who() {
         <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-56">
       
           <div className='lg:max-w-xl'>
-            <div className='text-4xl text-left font-bold tracking-tight text-gray-900 sm:text-7xl'>
+            <div className='text-6xl text-left font-bold tracking-tight text-gray-900 sm:text-7xl'>
               Who.
             </div>
             <p className="mt-4 mx-2 text-lg leading-8 text-gray-600">
@@ -109,7 +109,7 @@ export default function Who() {
           </div>
           
           {/* Skills */}
-          <div className='mt-8 flex justify-center flex-wrap gap-2'>
+          <div className='mt-12 sm:mt-24 flex justify-center flex-wrap gap-2 sm:mx-28 lg:mx-32 md:gap-4 lg:gap-4'>
             <Skill
               logo={SVGS.react}
             />
@@ -117,14 +117,37 @@ export default function Who() {
               logo={SVGS.figma}
             />
             <Skill
-              logo={SVGS.react}
+              logo={SVGS.typescript}
             />
             <Skill
               logo={SVGS.react}
+              title='Native'
             />
             <Skill
-              logo={SVGS.react}
+              logo={SVGS.javascript}
             />
+            <Skill
+              logo={SVGS.tailwind}
+            />
+            <Skill
+              logo={SVGS.git}
+            />
+             <Skill
+              logo={SVGS.salesforce}
+            />
+            <Skill
+              logo={SVGS.nodejs}
+            />
+            <Skill
+              logo={SVGS.redux}
+            />
+            <Skill
+              logo={SVGS.kubernetes}
+            />
+            <Skill
+              logo={SVGS.unity}
+            />
+            
           </div>
         </div>
 
