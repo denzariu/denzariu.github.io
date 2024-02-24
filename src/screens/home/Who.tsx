@@ -37,20 +37,14 @@ export default function Who() {
             </div>
             <p className="mt-4 mx-2 text-lg leading-8 text-gray-600">
               I blend creativity with technical expertise.
-              {/* I am a versatile developer, graphic designer & creator.  */}
             </p>
-            {/* <p className="mt-4 mx-2 sm:mt-6 sm:mb-6 text-lg leading-8 text-gray-600">
-              Blending creativity with technical expertise, allowing me to excel in problem-solving and innovation.{' '} 
-              {/* I possess a keen eye for detail and thrive on tackling algorithmic challenges!  */}
-              {/* However, my interests vary in the fields of Multimedia, Crafts and Design. */}
-            {/* </p> */} 
           </div>
           
           <div className="mt-5 align-center justify-center flex-wrap sm:flex-nowrap gap-4 flex ">
             {/* Card */}
             <Card
               title='Software Engineer'
-              description='Educated at the Politehnica University of Bucharest, specialized in Computer Science & Systems Engineering.'
+              description='Educated at Politehnica University of Bucharest, specialized in Computer Science & Systems Engineering.'
               buttonText='See more'
               image={w_1}
               buttonAction={()=>{console.log('press')}}
@@ -58,7 +52,7 @@ export default function Who() {
             {/* Card */}
             <Card
               title='Graphic Designer'
-              description='My forte lies in blending creativity with technical expertise, allowing me to excel in problem-solving and innovation.'
+              description='Versatility in my work allows me to excel in both problem-solving and innovation.'
               buttonText='See more'
               image={w_2}
               buttonAction={()=>{console.log('press')}}

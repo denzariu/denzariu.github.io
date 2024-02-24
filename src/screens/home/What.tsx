@@ -33,7 +33,7 @@ function What() {
             <div className='text-6xl text-left font-bold tracking-tight text-gray-900 sm:text-7xl'>
               What.
             </div>
-            <p className="mt-4 mx-2 text-lg leading-8 text-gray-600">    
+            <p className="mt-4 mx-2 text-lg leading-8 text-gray-600 text-justify">    
               Here are some projects that highlight my skills and experience with real-life examples of my work. 
               Each project comes with a brief description and links to code repositories and live demos. 
               They show how I tackle complex problems, handle various technologies, and manage projects effectively.
@@ -111,43 +111,45 @@ function What() {
           </p>
         </div>
 
-        {/* BMO */}
-        <div className='mx-auto max-w-4xl p-4 gap-4 bg-gradient-to-br rounded-lg flex justify-center bg-green-50 border'>
-          <a className='flex-1 self-center'
-            href='https://github.com/denzariu/BMO'
-          >
-            <img className={"rounded-lg w-full shadow-it self-center "} src={BMO} alt={'BMO'} />
-          </a>
-          <div className='hidden sm:flex flex-col flex-2'>
-            <p className='text-2xl font-bold text-left tracking-tight dark:text-gray-900 text-white'>
-              BMO - Friendliest voice assistant
-            </p>
-            <p className='mt-2 hidden sm:flex text-left'>
-              Contains multiple functionalities: 
-              informative (time & date, weather condition, descriptions of concepts, translations, writing/playing notes, math, etc.) 
-              & recreational (playing content from Youtube, fetching content from Reddit, video games, sound visualizer etc.), interactions that emphasize on user's experience, with minimal preconfiguration.
-            </p>
+        <div className="mx-auto max-w-4xl rounded-md bg-gradient-to-br divide-y-4 from-green-300 via-fuchsia-200 to-fuchsia-400 p-1">
+    
+          {/* BMO */}
+          <div className='mx-auto max-w-4xl p-4 gap-4 rounded-lg flex justify-center bg-green-50 border'>
+            <a className='flex-1 self-center'
+              href='https://github.com/denzariu/BMO'
+            >
+              <img className={"rounded-lg w-full shadow-it self-center "} src={BMO} alt={'BMO'} />
+            </a>
+            <div className='hidden sm:flex flex-col flex-2'>
+              <p className='text-2xl font-bold text-left tracking-tight dark:text-gray-900 text-white'>
+                BMO - Friendliest voice assistant
+              </p>
+              <p className='mt-2 hidden sm:flex text-justify tracking-tight'>
+                Contains multiple functionalities: 
+                informative (time & date, weather condition, descriptions of concepts, translations, writing/playing notes, math, etc.) 
+                & recreational (playing content from Youtube, fetching content from Reddit, video games, sound visualizer etc.), interactions that emphasize on user's experience, with minimal preconfiguration.
+              </p>
+            </div>
+          </div>
+
+          <div className='mx-auto max-w-4xl p-4 gap-4 rounded-lg flex justify-center bg-fuchsia-50 border'>
+            <a className='flex-1 self-center'
+              href='https://github.com/denzariu/Space-Beat'
+            >
+              <img className={"rounded-lg shadow-it self-center"} src={o_2} alt={'SliceTendo'} />
+            </a>
+            <div className='hidden sm:flex flex-col flex-2'>
+              <p className='text-2xl font-bold text-left tracking-tight dark:text-gray-900 text-white'>
+                SpaceBeat - Bluetooth-controlled Nintendo Game
+              </p>
+              <p className='mt-2 hidden sm:flex text-justify tracking-tight'>
+                Nintendo Switch Game made in Unity Engine 3D 
+                in which the user controls Bluetooth Nintendo Joy-Cons in order to swing the blades 
+                and cut different types of objects.
+              </p>
+            </div>
           </div>
         </div>
-
-        <div className='mx-auto max-w-4xl p-4 gap-4 bg-gradient-to-br rounded-lg flex justify-center bg-fuchsia-50 border'>
-          <a className='flex-1 self-center'
-            href='https://github.com/denzariu/Space-Beat'
-          >
-            <img className={"rounded-lg shadow-it self-center"} src={o_2} alt={'SliceTendo'} />
-          </a>
-          <div className='hidden sm:flex flex-col flex-2'>
-            <p className='text-2xl font-bold text-left tracking-tight dark:text-gray-900 text-white'>
-              SpaceBeat - Bluetooth-controlled Nintendo Game
-            </p>
-            <p className='mt-2 hidden sm:flex text-left'>
-              Nintendo Switch Game made in Unity Engine 3D 
-              in which the user controls Bluetooth Nintendo Joy-Cons in order to swing the blades 
-              and cut different types of objects.
-            </p>
-          </div>
-        </div>
-
 
         {/* BG */}
         <div
