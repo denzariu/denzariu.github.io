@@ -45,7 +45,7 @@ export default function Navigator() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+            <a href="mailto:denisstefanpinzariu@gmail.com" className="text-sm font-semibold leading-6 text-gray-900">
               Contact <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
@@ -86,7 +86,7 @@ export default function Navigator() {
                 </div>
                 <div className="py-6">
                   <a
-                    href="#"
+                    href="mailto:denisstefanpinzariu@gmail.com"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Contact
@@ -124,7 +124,7 @@ export default function Navigator() {
           <div className="flex flex-row text-left">
             <div className="flex flex-col justify-start items-center mt-3 sm:mt-5">
               <div className="w-5 h-6 rounded-full bg-[#915eff]"></div>
-              <div className="w-1 h-full mb-1 bg-gradient-to-b from-purple-500 to-slate-200"></div>
+              <div className="w-1 h-full mb-1 bg-gradient-to-b from-purple-500 to-white"></div>
             </div>
             <div className='flex-col mx-4'>
               <h1 className="text-6xl font-bold tracking-tight text-gray-900 sm:text-8xl">
@@ -143,10 +143,10 @@ export default function Navigator() {
             
             <div className="mt-10 flex items-center justify-start lg:justify-center gap-x-6">
               <a
-                href="#why"
+                href="#what"
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Why would I care
+                My projects
               </a>
               <a href="#who" className="text-sm font-semibold leading-6 text-gray-900">
                 Learn more <span aria-hidden="true">→</span>

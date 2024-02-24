@@ -20,7 +20,7 @@ function Card({title, description, image}: CardProps) {
 
           <div className="">
             <a className="self-center flex-1">
-                <img className="rounded-t-lg p-5 w-full" src={image} alt="" />
+                <img className="rounded-t-lg p-5 w-full rounded-full" src={image} alt="" />
             </a>
             <a>
                 <h5 className="mb-2 text-2xl font-bold text-center tracking-tight text-gray-900 dark:text-white">

@@ -19,7 +19,7 @@ function Job(job: JobProps) {
       {/* Dot and fade */}
       <div className="mt-0 flex flex-col justify-start items-center">
         <div className="w-5 h-5 rounded-full bg-[#915eff]"></div>
-        <div className="w-1 h-full -mb-5 bg-gradient-to-b from-purple-500 to-slate-200"></div>
+        <div className="w-1 h-full -mb-5 bg-gradient-to-b from-purple-500 to-white"></div>
       </div>
 
       {/* Card */}

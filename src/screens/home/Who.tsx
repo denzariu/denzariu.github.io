@@ -1,9 +1,11 @@
 import Card from '../components/Card'
-import logo from '../../assets/logo.png'
 import Job from '../components/Job'
 import Skill from '../components/Skill'
 import { SVGS } from '../../assets/svgs'
 
+import w_2 from '../../assets/image/w_2_2.png'
+import w_3 from '../../assets/image/w_2.png'
+import w_1 from '../../assets/image/w_3.jpg'
 
 
 export default function Who() {
@@ -18,7 +20,7 @@ export default function Who() {
         >
           {/* Background blur */}
           <div
-            className=" relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+            className=" relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem] pointer-events-none"
             style={{
               clipPath:
                 'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
@@ -50,7 +52,7 @@ export default function Who() {
               title='Software Engineer'
               description='Educated at the Politehnica University of Bucharest, specialized in Computer Science & Systems Engineering.'
               buttonText='See more'
-              image={logo}
+              image={w_1}
               buttonAction={()=>{console.log('press')}}
             />
             {/* Card */}
@@ -58,7 +60,7 @@ export default function Who() {
               title='Graphic Designer'
               description='My forte lies in blending creativity with technical expertise, allowing me to excel in problem-solving and innovation.'
               buttonText='See more'
-              image={logo}
+              image={w_2}
               buttonAction={()=>{console.log('press')}}
             />
             {/* Card */}
@@ -66,7 +68,7 @@ export default function Who() {
               title='Content Creator'
               description='I possess a keen eye for detail and thrive on tackling algorithmic challenges, but my interests vary in the fields of Multimedia, Crafts and Design.'
               buttonText='See more'
-              image={logo}
+              image={w_3}
               buttonAction={()=>{console.log('press')}}
             />
 
@@ -155,7 +157,7 @@ export default function Who() {
 
         {/* Absolute elements (background) */}
         <div
-          className="absolute inset-x-0 top-[calc(100%-25rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-80rem)]"
+          className="absolute inset-x-0 top-[calc(100%-25rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-80rem)] pointer-events-none"
           aria-hidden="true"
         >
           <div
