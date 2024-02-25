@@ -86,7 +86,7 @@ function What() {
             />
             <ImageCard
               border
-              link='https://denzariu.github.io/'
+              link='https://denzariu.github.io/old_portfolio'
               image={w_3}
               desc='Old Site'
             />
