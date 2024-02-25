@@ -30,7 +30,7 @@ function What() {
         {/* Header & description */}
         <div className="mx-auto max-w-4xl pt-48 sm:py-64 lg:py-64 xl:py-72 !pb-40">
           <div className='lg:max-w-xl'>
-            <div className='text-6xl text-left font-bold tracking-tight text-gray-900 sm:text-7xl'>
+            <div className='text-6xl text-left font-bold tracking-tight text-gray-800 sm:text-7xl'>
               What.
             </div>
             <p className="mt-4 mx-2 text-lg leading-8 text-gray-600 text-justify">    
@@ -41,15 +41,14 @@ function What() {
           </div>
         </div>
 
-
         {/* Mobile Dev */}
         <div className="mx-auto max-w-4xl bg-gradient-to-br">
           <p className='relative p-3 mx-12 lg:mx-48 rounded-t-xl 
-            text-4xl text-center font-bold tracking-tight bg-gray-900 text-white sm:text-5xl'
+            text-4xl text-center font-bold tracking-tight bg-gray-800 text-white sm:text-5xl'
           >
             Mobile Dev
           </p>
-          <div className=" flex pb-[24rem] sm:pb-4 sm:mx-0 p-4 align-center justify-center flex-wrap gap-2 sm:flex-nowrap border-4 border-b-0 border-gray-900 rounded-t-lg ">
+          <div className=" flex pb-[24rem] sm:pb-4 sm:mx-0 p-4 align-center justify-center flex-wrap gap-2 sm:flex-nowrap border-4 border-b-0 border-gray-800 rounded-t-lg ">
           
             <ImageCard
               link='https://github.com/denzariu/zeldex'
@@ -70,17 +69,16 @@ function What() {
           </div>
         </div>
 
-        {/* Cards - Web */}
-        <div className="mx-auto mt-0 max-w-4xl bg-gradient-to-br from-gray-800 to-[#36335e] rounded-b-lg">
-          <p className='relative p-3 mx-12 lg:mx-48 rounded-b-xl 
-            text-4xl text-center font-bold tracking-tight bg-white text-gray-800 sm:text-5xl
-            border-4 border-t-0 border-[#36335e]'
+        {/* Web Dev */}
+        <div className="-mt-1 mx-auto max-w-4xl bg-gradient-to-br border-4 border-t-0 border-gray-800 rounded-b-lg">
+          <p className='relative p-3 mx-12 lg:mx-48 rounded-xl
+            text-4xl text-center font-bold tracking-tight bg-white text-gray-800 sm:text-5xl border-4 border-gray-800'
           >
             Web Dev
           </p>
-          <div className="mx-4 pb-[24rem] sm:pb-4 sm:mx-0 p-4 align-center justify-center flex-wrap sm:flex-nowrap gap-3 flex">
-            
-          <ImageCard
+          <div className=" flex -mt-10 pt-12 pb-[20rem] sm:pb-4 sm:mx-0 p-4 align-center justify-center flex-wrap gap-3 sm:flex-nowrap bg-gray-800 border-gray-800 border-t-4">
+          
+            <ImageCard
               border
               link='https://github.com/denzariu/Depodenz-Warehouse-Site'
               image={w_2}
@@ -99,10 +97,10 @@ function What() {
               image={w_1}
               desc='PokeDenz'
             />
-           
+            
           </div>
         </div>
-          
+
         <div className="mx-auto mt-20 max-w-4xl bg-gradient-to-br rounded-lg">
           <p className='relative pb-3 mx-12 lg:mx-48 rounded-t-xl 
             text-4xl text-center font-bold tracking-tight bg-gradient-to-tr from-green-300 to-fuchsia-400 via-fuchsia-200 from-20% text-white sm:text-5xl'
@@ -121,10 +119,10 @@ function What() {
               <img className={"rounded-lg w-full shadow-it self-center "} src={BMO} alt={'BMO'} />
             </a>
             <div className='hidden sm:flex flex-col flex-2'>
-              <p className='text-2xl font-bold text-left tracking-tight dark:text-gray-900 text-white'>
+              <p className='text-2xl font-bold text-left tracking-tight text-gray-800'>
                 BMO - Friendliest voice assistant
               </p>
-              <p className='mt-2 hidden sm:flex text-justify tracking-tight'>
+              <p className='mt-2 hidden sm:flex text-justify tracking-tight text-gray-600'>
                 Contains multiple functionalities: 
                 informative (time & date, weather condition, descriptions of concepts, translations, writing/playing notes, math, etc.) 
                 & recreational (playing content from Youtube, fetching content from Reddit, video games, sound visualizer etc.), interactions that emphasize on user's experience, with minimal preconfiguration.
@@ -139,10 +137,10 @@ function What() {
               <img className={"rounded-lg shadow-it self-center"} src={o_2} alt={'SliceTendo'} />
             </a>
             <div className='hidden sm:flex flex-col flex-2'>
-              <p className='text-2xl font-bold text-left tracking-tight dark:text-gray-900 text-white'>
+              <p className='text-2xl font-bold text-left tracking-tight text-gray-800'>
                 SpaceBeat - Bluetooth-controlled Nintendo Game
               </p>
-              <p className='mt-2 hidden sm:flex text-justify tracking-tight'>
+              <p className='mt-2 hidden sm:flex text-justify tracking-tight text-gray-600'>
                 Nintendo Switch Game made in Unity Engine 3D 
                 in which the user controls Bluetooth Nintendo Joy-Cons in order to swing the blades 
                 and cut different types of objects.

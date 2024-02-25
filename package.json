@@ -1,8 +1,8 @@
 {
-  "name": "websiter",
+  "name": "denzariu.github.io",
   "private": true,
   "version": "0.0.1",
-  "homepage": "http://denzariu.github.io/websiter/",
+  "homepage": "http://denzariu.github.io",
   "type": "module",
   "scripts": {
     "dev": "vite",
