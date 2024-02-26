@@ -40,7 +40,7 @@ export default function Who() {
             </p>
           </div>
           
-          <div className="mt-5 align-center justify-center flex-wrap sm:flex-nowrap gap-4 flex ">
+          <div className=" mt-5 align-center justify-center flex-wrap sm:flex-nowrap gap-4 flex ">
             {/* Card */}
             <Card
               title='Software Engineer'

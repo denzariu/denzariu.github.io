@@ -51,19 +51,20 @@ function What() {
           <div className=" flex pb-[24rem] sm:pb-4 sm:mx-0 p-4 align-center justify-center flex-wrap gap-2 sm:flex-nowrap border-4 border-b-0 border-gray-800 rounded-t-lg ">
           
             <ImageCard
-              link='https://github.com/denzariu/zeldex'
               image={m_1}
               desc='Zeldex'
+              github='https://github.com/denzariu/zeldex'
             />
             <ImageCard
-              link='https://github.com/denzariu/tomoartou'
               image={m_2}
               desc='Tomoartou'
+              github='https://github.com/denzariu/tomoartou'
             />
             <ImageCard
-              link='https://github.com/denzariu/outfit-planner'
               image={m_3}
               desc='FitMe'
+              github='https://github.com/denzariu/outfit-planner'
+              playstore='https://play.google.com/store/apps/details?id=com.infitter'
             />
             
           </div>
@@ -80,20 +81,23 @@ function What() {
           
             <ImageCard
               border
-              link='https://github.com/denzariu/Depodenz-Warehouse-Site'
               image={w_2}
               desc='DepoDenz'
+              github='https://github.com/denzariu/Depodenz-Warehouse-Site'
             />
             <ImageCard
               border
               link='https://denzariu.github.io/old_portfolio'
+              github='https://github.com/denzariu/old_portfolio'
               image={w_3}
               desc='Old Site'
+
             />
             
             <ImageCard
               border
               link='https://denzariu.github.io/react_pokemon_app/'
+              github='https://github.com/denzariu/react_pokemon_app'
               image={w_1}
               desc='PokeDenz'
             />
@@ -109,7 +113,7 @@ function What() {
           </p>
         </div>
 
-        <div className="mx-auto max-w-4xl rounded-md bg-gradient-to-br divide-y-4 from-green-300 via-fuchsia-200 to-fuchsia-400 p-1">
+        <div className="mx-auto max-w-4xl rounded-md bg-gradient-to-br space-y-1 from-green-300 via-fuchsia-200 to-fuchsia-400 p-1">
     
           {/* BMO */}
           <div className='mx-auto max-w-4xl p-4 gap-4 rounded-lg flex justify-center bg-green-50 border'>
