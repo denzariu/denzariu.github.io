@@ -106,7 +106,7 @@ function What() {
         </div>
 
         <div className="mx-auto mt-20 max-w-4xl bg-gradient-to-br rounded-lg">
-          <p className='relative pb-3 mx-12 lg:mx-48 rounded-t-xl 
+          <p className='relative pb-3 mx-12 lg:mx-48 rounded-t-xl
             text-4xl text-center font-bold tracking-tight bg-gradient-to-tr from-green-300 to-fuchsia-400 via-fuchsia-200 from-20% text-white sm:text-5xl'
           >
             Others
