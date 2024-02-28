@@ -11,7 +11,7 @@ function Card({title, description, image}: CardProps) {
 
 
   return (
-    <div className="max-w-sm sm:flex-[0.34] border border-gray-200 rounded-lg shadow  
+    <div className="max-w-sm sm:flex-[0.34] border rounded-lg shadow bg-gray-800 border-gray-700 
                     shadow-it 
                     transition ease-in-out duration-300 hover:bg-gradient-to-tr from-gray-800 to-[#282646] hover:scale-105 hover:border-purple-900"
     >
@@ -23,11 +23,11 @@ function Card({title, description, image}: CardProps) {
                 <img className="rounded-t-lg p-5 w-full rounded-full" src={image} alt="" />
             </a>
             <a>
-                <h5 className="mb-2 text-2xl font-bold text-center tracking-tight text-gray-900">
+                <h5 className="mb-2 text-2xl font-bold text-center tracking-tight text-white">
                   {title}
                 </h5>
             </a>
-            <p className="mb-3 font-normal tracking-tight  text-gray-700">
+            <p className="mb-3 font-normal tracking-tight text-gray-400">
               {description}
             </p>
           </div>

@@ -12,7 +12,7 @@ function Job(job: JobProps) {
     <div className='flex mt-0 gap-2'>
 
       {/* Date for big screens */}
-      <p className="hidden sm:flex sm:flex-[0.45] text-right justify-end -mt-1 mx-2 text-1xl font-medium tracking-tight text-gray-900">
+      <p className="hidden sm:flex sm:flex-[0.45] text-right justify-end -mt-1 mx-2 text-1xl font-medium tracking-tight text-[#915eff]">
         {job.startToEnd.toUpperCase()}
       </p>
 
@@ -24,19 +24,19 @@ function Job(job: JobProps) {
 
       {/* Card */}
       <div className="
-         m-1 sm:m-2 mb-5 p-3 pb-4 flex-1 border-2 border-gray-200 rounded-lg shadow  
+         m-1 sm:m-2 mb-5 p-3 pb-4 flex-1 border-2 rounded-lg shadow bg-gray-800 border-gray-700 
         bg-gradient-to-tr from-gray-800 to-[#282646]
         transition ease-in-out duration-300 hover:scale-105 hover:border-purple-900 hover:to-gray-800
       ">
-        <p className='mb-0 text-2xl font-bold text-left tracking-tight text-gray-900'>
+        <p className='mb-0 text-2xl font-bold text-left tracking-tight text-white'>
           {job.title}
         </p>
-        <p className='mb-2 text-1xl font-bold text-left tracking-tight text-gray-900'>
+        <p className='mb-2 text-1xl font-bold text-left tracking-tight text-purple-600'>
           {job.subtitle}
         </p>
         <ul className="list-disc ml-2">
         {job.description.map(row => 
-          <li className="mt-2 mx-2 font-normal leading-7 tracking-tight text-gray-700">
+          <li className="mt-2 mx-2 font-normal leading-7 tracking-tight text-gray-400">
             {row}
           </li>
         )}
