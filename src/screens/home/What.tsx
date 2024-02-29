@@ -8,6 +8,7 @@ import BMO from '../../assets/image/bmo_anim_2.gif'
 import o_2 from '../../assets/image/o_2.png'
 
 import ImageCard from '../components/ImageCard'
+import { InView } from 'react-intersection-observer'
 
 
 function What() {
@@ -116,7 +117,19 @@ function What() {
         <div className="mx-auto max-w-4xl rounded-md bg-gradient-to-br space-y-1 from-green-300 via-fuchsia-200 to-fuchsia-400 p-1">
     
           {/* BMO */}
-          <div className='mx-auto max-w-4xl p-4 gap-4 rounded-lg flex justify-center bg-green-50 border'>
+          <InView 
+            threshold={0.2}
+            trackVisibility
+            triggerOnce
+            delay={200}
+          >
+          {({ inView, ref, entry }) => (
+          <div ref={ref} 
+            className={`
+              mx-auto max-w-4xl p-4 gap-4 rounded-lg flex justify-center bg-green-50 border
+              transition-all duration-300 ${inView ? 'translate-y-0 opacity-1' : 'translate-y-16 opacity-0' }
+            `}
+          >
             <a className='flex-1 self-center'
               href='https://github.com/denzariu/BMO'
             >
@@ -133,8 +146,23 @@ function What() {
               </p>
             </div>
           </div>
+          )}
+          </InView>
 
-          <div className='mx-auto max-w-4xl p-4 gap-4 rounded-lg flex justify-center bg-fuchsia-50 border'>
+          {/* Space-Beat */}
+          <InView 
+            threshold={0.2}
+            trackVisibility
+            triggerOnce
+            delay={200}
+          >
+          {({ inView, ref, entry }) => (
+          <div ref={ref} 
+            className={`
+              mx-auto max-w-4xl p-4 gap-4 rounded-lg flex justify-center bg-fuchsia-50 border'
+              transition-all duration-300 ${inView ? 'translate-y-0 opacity-1' : 'translate-y-16 opacity-0'} 
+            `}
+          >
             <a className='flex-1 self-center'
               href='https://github.com/denzariu/Space-Beat'
             >
@@ -151,6 +179,8 @@ function What() {
               </p>
             </div>
           </div>
+          )}
+          </InView>
         </div>
 
         {/* BG */}

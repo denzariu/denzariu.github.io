@@ -1,3 +1,5 @@
+import { InView } from "react-intersection-observer"
+
 
 type CardProps = {
   title: string,
@@ -8,12 +10,21 @@ type CardProps = {
 }
 
 function Card({title, description, image}: CardProps) {
-
+ 
 
   return (
-    <div className="max-w-sm sm:flex-[0.34] border rounded-lg shadow bg-gray-800 border-gray-700 
-                    shadow-it 
-                    transition ease-in-out duration-300 hover:bg-gradient-to-tr from-gray-800 to-[#282646] hover:scale-105 hover:border-purple-900"
+    <InView 
+      threshold={0.3}
+      trackVisibility
+      triggerOnce
+      delay={200}
+    >
+    {({ inView, ref, entry }) => (
+    <div ref={ref} 
+      className={`max-w-sm sm:flex-[0.34] border rounded-lg shadow bg-gray-800 border-gray-700 
+        shadow-it 
+        hover:bg-gradient-to-tr from-gray-800 to-[#282646] hover:scale-105 hover:border-purple-900
+        transition-all duration-300 ${inView ? 'opacity-1 translate-y-0' : 'opacity-0 translate-y-16' }`}
     >
       
       <div className="p-5 h-full flex flex-col justify-between ">
@@ -41,7 +52,9 @@ function Card({title, description, image}: CardProps) {
 
       </div>
     </div>
-  )
+    )}
+    </InView>
+    )
 }
 
 export default Card

@@ -128,7 +128,7 @@ export default function Who() {
             <Skill
               logo={SVGS.git}
             />
-             <Skill
+            <Skill
               logo={SVGS.salesforce}
             />
             <Skill

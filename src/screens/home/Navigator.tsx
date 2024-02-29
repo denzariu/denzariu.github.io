@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import logo from '../../assets/logo.png'
+import { InView } from 'react-intersection-observer'
 
 const navigation = [
   { name: 'Home', href: '#home' },
@@ -122,21 +123,48 @@ export default function Navigator() {
             </div>
           </div> */}
           <div className="flex flex-row text-left">
-            <div className="flex flex-col justify-start items-center mt-3 sm:mt-5">
+
+            <InView 
+              threshold={0.2}
+              trackVisibility
+              triggerOnce
+              delay={200}
+            >
+            {({ inView, ref, entry }) => (
+            <div ref={ref} 
+              className={`
+                flex flex-col justify-start items-center mt-3 sm:mt-5
+                transition-all duration-1000 ${inView ? 'opacity-1 translate-y-0' : 'opacity-0 translate-y-16'}
+              `}
+            >
               <div className="w-5 h-6 rounded-full bg-[#915eff]"></div>
               <div className="w-1 h-full mb-1 bg-gradient-to-b from-purple-500 to-white"></div>
             </div>
-            <div className='flex-col mx-4'>
+            )}
+            </InView>
+            
+            <InView 
+              threshold={0.2}
+              trackVisibility
+              triggerOnce
+              delay={1000}
+            >
+            {({ inView, ref, entry }) => (
+            <div ref={ref} 
+              className={`
+                flex-col mx-4
+                transition-all delay-1000 duration-1000 ${inView ? 'opacity-1 translate-x-0' : 'opacity-0 translate-x-4'}
+              `}
+            >
               <h1 className="text-6xl font-bold tracking-tight text-gray-900 sm:text-8xl">
                 Denis.
-                {/* Animate this */}
               </h1> 
               <p className="mt-4 mx-2 sm:mt-6 text-lg leading-8 text-gray-600">
-                {/* React Native | React | Typescript<br/><br/> */}
                 I develop mobile & web apps, user interfaces, and anything that sparks some joy.
-                {/* It's quite nice that you're actually looking through my projects and stuff. */}
               </p>
             </div>
+            )}
+            </InView>
           </div>
           <div className="text-left xl:text-center">
 
