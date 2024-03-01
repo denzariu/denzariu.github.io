@@ -1,1 +1,1 @@
-denzariu.github.io/game-of-life
+denzariu.github.io
