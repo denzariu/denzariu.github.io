@@ -1,1 +1,1 @@
-[See for yourself.](denzariu.github.io)
+[See for yourself.](https://denzariu.github.io)
