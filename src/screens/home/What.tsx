@@ -123,7 +123,7 @@ function What() {
             triggerOnce
             delay={200}
           >
-          {({ inView, ref, entry }) => (
+          {({ inView, ref }) => (
           <div ref={ref} 
             className={`
               mx-auto max-w-4xl p-4 gap-4 rounded-lg flex justify-center bg-green-50 border
@@ -156,7 +156,7 @@ function What() {
             triggerOnce
             delay={200}
           >
-          {({ inView, ref, entry }) => (
+          {({ inView, ref }) => (
           <div ref={ref} 
             className={`
               mx-auto max-w-4xl p-4 gap-4 rounded-lg flex justify-center bg-fuchsia-50 border'

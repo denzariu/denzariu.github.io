@@ -22,7 +22,7 @@ function ImageCard(obj: ImageCardProps) {
       triggerOnce
       delay={200}
     >
-    {({ inView, ref, entry }) => (
+    {({ inView, ref }) => (
     <div ref={ref} 
       className={`h-48 sm:h-auto self-center sm:flex-1
                 group hover:translate-x-8

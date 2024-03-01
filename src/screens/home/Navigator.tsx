@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import logo from '../../assets/logo.png'
@@ -13,6 +13,31 @@ const navigation = [
 
 export default function Navigator() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [showButton, setShowButton] = useState(false);
+
+  const handleScroll = () => {
+    if (
+      document.body.scrollTop > 80 ||
+      document.documentElement.scrollTop > 80
+    ) {
+      setShowButton(true);
+    } else {
+      setShowButton(false);
+    }
+  };
+
+  const backToTop = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  };
+
+  useEffect(() => {
+    document.documentElement.style.scrollBehavior = "smooth";
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <div>
@@ -99,6 +124,33 @@ export default function Navigator() {
         </Dialog>
       </header>
 
+      {/* Back to top */}
+      {showButton && (
+        <button
+          type="button"
+          onClick={backToTop}
+          className={` ${
+            showButton ? `inline-block` : `hidden`
+          } fixed z-50 bottom-[40px] right-[40px] p-3 bg-indigo-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-indigo-500 hover:shadow-lg focus:bg-indigo-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-indigo-400 active:shadow-lg transition duration-150 ease-in-out`}
+        >
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            className="w-4 h-4"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              fill="currentColor"
+              d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"
+            ></path>
+          </svg>
+        </button>
+      )}
+
+      {/* Landing page / HOME */}
       <div id='#home' className="relative isolate px-6 pt-14 lg:px-8">
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -130,7 +182,7 @@ export default function Navigator() {
               triggerOnce
               delay={200}
             >
-            {({ inView, ref, entry }) => (
+            {({ inView, ref }) => (
             <div ref={ref} 
               className={`
                 flex flex-col justify-start items-center mt-3 sm:mt-5
@@ -149,7 +201,7 @@ export default function Navigator() {
               triggerOnce
               delay={1000}
             >
-            {({ inView, ref, entry }) => (
+            {({ inView, ref }) => (
             <div ref={ref} 
               className={`
                 flex-col mx-4

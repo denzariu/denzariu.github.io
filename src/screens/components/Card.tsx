@@ -19,7 +19,7 @@ function Card({title, description, image}: CardProps) {
       triggerOnce
       delay={200}
     >
-    {({ inView, ref, entry }) => (
+    {({ inView, ref }) => (
     <div ref={ref} 
       className={`max-w-sm sm:flex-[0.34] border rounded-lg shadow bg-gray-800 border-gray-700 
         shadow-it 

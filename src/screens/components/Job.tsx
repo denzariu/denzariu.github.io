@@ -31,7 +31,7 @@ function Job(job: JobProps) {
         triggerOnce
         delay={100}
       >
-      {({ inView, ref, entry }) => (
+      {({ inView, ref }) => (
         <div ref={ref} 
           className={`
             m-1 sm:m-2 mb-5 p-3 pb-4 flex-1 border-2 rounded-lg shadow bg-gray-800 border-gray-700 
