@@ -1,5 +1,6 @@
 
 function Why() {
+  
   return (
     <div id='why'>
       <div className="relative mt-20 mx-auto px-6 lg:px-0 max-w-4xl pt-48 sm:pt-64 lg:pt-64 xl:pt-72 pointer-events-none">
@@ -19,32 +20,6 @@ function Why() {
             reimagining concepts of interaction with the user, with emphasis on their experience.
           </p>
         </div>
-      
-    {/* <div className='mt-8 mx-auto'>
-      <div className='flex -space-x-2'>
-        <img className='rounded-full z-10 w-24 h-full'
-          src='https://media.licdn.com/dms/image/D4E03AQFQVwnM4SxRcA/profile-displayphoto-shrink_100_100/0/1685349145993?e=1714003200&v=beta&t=LRJxb9CPKMJkFjc5yHDQZwYfXXUVU580BYkdiXnrQ90'
-        />
-        <div className='mt-6'>
-          <div className='p-3 pl-12 -ml-6 w-fit self-center bg-gray-900 rounded-sm'>
-            <p className='text-white'>
-              Ben Ziskoven, Agile Leader
-            </p>
-            <p className='text-white'>
-              Deloitte Digital
-            </p>
-          
-          </div>
-          <p className="-ml-12 -mt-1 py-4 px-16 text-lg leading-8 text-gray-600 border-4 border-gray-900 tracking-tight">    
-            Denis worked with me on a Salesforce scrum team as a developer for Deloitte Digital for PostNL at the IT, BIT CE department, in the Agile Release Train focusing on business customers. 
-            Denis is thoughtful & motivated to do complex novel work and is open about things that need improvement in the team technically. 
-            This makes it super pleasant to work with him and I highly recommend him on future assignments! 
-            The project had many spikes to find out technical possibilities for how to best personalise the experience for business customers via personalised dashboards through APIs & Plugins. 
-            Denis found his way quickly in the new team as he is a self-motivated team player. 
-            He did not hesitate in reaching out to other developers from Deloitte in order to overcome impediments and also worked independently on complex user stories. 
-          </p>
-        </div>
-      </div> */}
       
         <div className='py-24 sm:py-32 lg:py-32 xl:py-36'>
           <div className='text-2xl mb-2 text-left font-bold tracking-tight text-gray-900 sm:text-4xl'>
@@ -92,6 +67,10 @@ function Why() {
           />
         </div>
       </div> 
+
+      <footer className="py-48">
+
+      </footer>
     </div>
   )
 }

@@ -41,6 +41,7 @@ export default function Navigator() {
 
   return (
     <div>
+      {/* Menu */}
       <header className="absolute inset-x-0 top-0 z-50">
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
@@ -104,6 +105,7 @@ export default function Navigator() {
                     <a
                       key={item.name}
                       href={item.href}
+                      onClick={() => setMobileMenuOpen(false)}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                     >
                       {item.name}
@@ -131,7 +133,7 @@ export default function Navigator() {
           onClick={backToTop}
           className={` ${
             showButton ? `inline-block` : `hidden`
-          } fixed z-50 bottom-[40px] right-[40px] p-3 bg-indigo-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-indigo-500 hover:shadow-lg focus:bg-indigo-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-indigo-400 active:shadow-lg transition duration-150 ease-in-out`}
+          } fixed z-50 bottom-[40px] right-[40px] p-3 bg-main-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-main-500 hover:shadow-lg focus:bg-main-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-main-400 active:shadow-lg transition duration-150 ease-in-out`}
         >
           <svg
             aria-hidden="true"
@@ -165,15 +167,6 @@ export default function Navigator() {
           />
         </div>
         <div className="mx-auto max-w-2xl py-48 sm:py-64 lg:py-64 xl:py-72">
-          {/* <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              Announcing our next round of funding.{' '}
-              <a href="#" className="font-semibold text-indigo-600">
-                <span className="absolute inset-0" aria-hidden="true" />
-                Read more <span aria-hidden="true">&rarr;</span>
-              </a>
-            </div>
-          </div> */}
           <div className="flex flex-row text-left">
 
             <InView 
@@ -189,8 +182,8 @@ export default function Navigator() {
                 transition-all duration-1000 ${inView ? 'opacity-1 translate-y-0' : 'opacity-0 translate-y-16'}
               `}
             >
-              <div className="w-5 h-6 rounded-full bg-[#915eff]"></div>
-              <div className="w-1 h-full mb-1 bg-gradient-to-b from-purple-500 to-white"></div>
+              <div className="w-5 h-6 rounded-full bg-main-500"></div>
+              <div className="w-1 h-full mb-1 bg-gradient-to-b from-main-500 to-white"></div>
             </div>
             )}
             </InView>
@@ -224,7 +217,7 @@ export default function Navigator() {
             <div className="mt-10 flex items-center justify-start lg:justify-center gap-x-6">
               <a
                 href="#what"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-md bg-main-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-main-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-main-600"
               >
                 My projects
               </a>

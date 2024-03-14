@@ -49,23 +49,26 @@ function What() {
           >
             Mobile Dev
           </p>
-          <div className=" flex pb-[24rem] sm:pb-4 sm:mx-0 p-4 align-center justify-center flex-wrap gap-2 sm:flex-nowrap border-4 border-b-0 border-gray-800 rounded-t-lg ">
+          <div className=" flex pb-[24rem] sm:pb-4 sm:mx-0 p-4 align-center justify-center flex-wrap gap-2 sm:flex-nowrap border-4 border-b-0 border-gray-800 rounded-t-lg font-semibold">
           
             <ImageCard
               image={m_1}
               desc='Zeldex'
               github='https://github.com/denzariu/zeldex'
+              technologies={[{name: 'React Native | Redux', style: 'text-gray-800 bg-white'}]}
             />
             <ImageCard
               image={m_2}
               desc='Tomoartou'
               github='https://github.com/denzariu/tomoartou'
+              technologies={[{name: 'React Native | APIs', style: 'text-gray-800 bg-white'}]}
             />
             <ImageCard
               image={m_3}
               desc='FitMe'
               github='https://github.com/denzariu/outfit-planner'
               playstore='https://play.google.com/store/apps/details?id=com.infitter'
+              technologies={[{name: 'React Native | SQLite', style: 'text-gray-800 bg-white'}]}
             />
             
           </div>
@@ -78,13 +81,14 @@ function What() {
           >
             Web Dev
           </p>
-          <div className=" flex -mt-10 pt-12 pb-[20rem] sm:pb-4 sm:mx-0 p-4 align-center justify-center flex-wrap gap-3 sm:flex-nowrap bg-gray-800 border-gray-800 border-t-4">
+          <div className=" flex -mt-10 pt-12 pb-[20rem] sm:pb-4 sm:mx-0 p-4 align-center justify-center flex-wrap gap-3 sm:flex-nowrap bg-gray-800 border-gray-800 border-t-4 font-semibold">
           
             <ImageCard
               border
               image={w_2}
               desc='DepoDenz'
               github='https://github.com/denzariu/Depodenz-Warehouse-Site'
+              technologies={[{name: 'Node | Express | MySQL', style: 'text-gray-800 bg-white'}]}
             />
             <ImageCard
               border
@@ -92,7 +96,7 @@ function What() {
               github='https://github.com/denzariu/old_portfolio'
               image={w_3}
               desc='Old Site'
-
+              technologies={[{name: 'HTML | CSS | JS', style: 'text-gray-800 bg-white'}]}
             />
             
             <ImageCard
@@ -101,6 +105,7 @@ function What() {
               github='https://github.com/denzariu/react_pokemon_app'
               image={w_1}
               desc='PokeDenz'
+              technologies={[{name: 'React | APIs', style: 'text-gray-800 bg-white'}]}
             />
             
           </div>
@@ -139,10 +144,14 @@ function What() {
               <p className='text-2xl font-bold text-left tracking-tight text-gray-800'>
                 BMO - Friendliest voice assistant
               </p>
-              <p className='mt-2 hidden sm:flex text-justify tracking-tight text-gray-600'>
-                Contains multiple functionalities: 
+              <p className='mt-2 hidden sm:flex text-justify tracking-tighter text-gray-600'>
+                Contains multiple functionalities, enabled through a voice & touchscreen interface: 
                 informative (time & date, weather condition, descriptions of concepts, translations, writing/playing notes, math, etc.) 
-                & recreational (playing content from Youtube, fetching content from Reddit, video games, sound visualizer etc.), interactions that emphasize on user's experience, with minimal preconfiguration.
+                & recreational (playing content from Youtube, fetching content from Reddit, video games, sound visualizer etc.), interactions that emphasize on user's experience, with minimal preconfiguration (as it autoconnects to Bluetooth and Wifi).
+              </p>
+              <p className='flex flex-1 items-end justify-end space-x-2'>
+                <p className='text-green-400'>Python</p>
+                <p className='text-slate-600'>Linux</p>
               </p>
             </div>
           </div>
@@ -172,12 +181,18 @@ function What() {
               <p className='text-2xl font-bold text-left tracking-tight text-gray-800'>
                 SpaceBeat - Bluetooth-controlled Nintendo Game
               </p>
-              <p className='mt-2 hidden sm:flex text-justify tracking-tight text-gray-600'>
+              <p className='mt-2 hidden sm:flex text-justify tracking-tighter text-gray-600'>
                 Nintendo Switch Game made in Unity Engine 3D 
                 in which the user controls Bluetooth Nintendo Joy-Cons in order to swing the blades 
                 and cut different types of objects.
               </p>
+              
+              <p className='flex flex-1 items-end justify-end space-x-2'>
+                <p className='text-fuchsia-400'>C#</p>
+                <p className='text-slate-600'>Unity</p>               
+              </p>
             </div>
+            
           </div>
           )}
           </InView>
