@@ -18,10 +18,10 @@ type ImageCardProps = {
 function ImageCard(obj: ImageCardProps) {
   return (
     <InView 
-      threshold={0.2}
+      threshold={0.05}
       trackVisibility
       triggerOnce
-      delay={200}
+      delay={150}
     >
     {({ inView, ref }) => (
     <div ref={ref} 
