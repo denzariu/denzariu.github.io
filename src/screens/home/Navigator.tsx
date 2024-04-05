@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import logo from '../../assets/logo.png'
+import logo from './../../assets/logo.png'
+import me from './../../assets/me.png'
 import { InView } from 'react-intersection-observer'
 
 const navigation = [
@@ -86,7 +87,7 @@ export default function Navigator() {
                 <img
                   className="h-8 w-auto"
                   src={logo}
-                  alt=""
+                  alt="Denzariu Logo"
                 />
               </a>
               <button
@@ -154,6 +155,28 @@ export default function Navigator() {
 
       {/* Landing page / HOME */}
       <div id='#home' className="relative isolate px-6 pt-14 lg:px-8">
+        <InView 
+          trackVisibility
+          threshold={0.85}
+          
+          delay={100}
+        >
+        {({ inView, ref }) => (
+          <div ref={ref} 
+            className='absolute z-[-1] w-[100%] h-[100vh] bottom-0 top-0 right-0 left-0 overflow-x-hidden'
+          >
+            <div 
+              className={`h-full w-[100%] flex items-center justify-center transition-transform duration-700 delay-[1500ms]
+                ${inView ? "translate-x-[50%]" : ""}
+              `}
+            >
+            <img src={me} 
+              className={`self-end object-contain sm:h-full w-fit transition-all duration-300 ${inView ? 'opacity-1' : 'opacity-0 blur-3xl'}`}
+            />
+            </div>
+          </div>
+        )}
+        </InView>
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
@@ -173,13 +196,13 @@ export default function Navigator() {
               threshold={0.2}
               trackVisibility
               triggerOnce
-              delay={200}
+              delay={100}
             >
             {({ inView, ref }) => (
             <div ref={ref} 
               className={`
                 flex flex-col justify-start items-center mt-3 sm:mt-5
-                transition-all duration-1000 ${inView ? 'opacity-1 translate-y-0' : 'opacity-0 translate-y-16'}
+                transition-all delay-1000 duration-1000 ${inView ? 'opacity-1 translate-y-0' : 'opacity-0 translate-y-16'}
               `}
             >
               <div className="w-5 h-6 rounded-full bg-main-500"></div>
@@ -192,13 +215,13 @@ export default function Navigator() {
               threshold={0.2}
               trackVisibility
               triggerOnce
-              delay={1000}
+              delay={100}
             >
             {({ inView, ref }) => (
             <div ref={ref} 
               className={`
                 flex-col mx-4
-                transition-all delay-1000 duration-1000 ${inView ? 'opacity-1 translate-x-0' : 'opacity-0 translate-x-4'}
+                transition-all delay-[1500ms] duration-1000 ${inView ? 'opacity-1 translate-x-0' : 'opacity-0 translate-x-4'}
               `}
             >
               <h1 className="text-6xl font-bold tracking-tight text-gray-900 sm:text-8xl">
@@ -213,8 +236,16 @@ export default function Navigator() {
           </div>
           <div className="text-left xl:text-center">
 
-            
-            <div className="mt-10 flex items-center justify-start lg:justify-center gap-x-6">
+          <InView 
+              threshold={0.2}
+              trackVisibility
+              triggerOnce
+              delay={100}
+            >
+            {({ inView, ref }) => (
+            <div ref={ref} className={`mt-10 flex items-center justify-start lg:justify-center gap-x-6 
+              transition-opacity ease-in-out duration-1000 delay-[1500ms] ${inView ? "opacity-1" : "opacity-0"}`}
+            >
               <a
                 href="#what"
                 className="rounded-md bg-main-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-main-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-main-600"
@@ -224,10 +255,13 @@ export default function Navigator() {
               <a href="#who" className="text-sm font-semibold leading-6 text-gray-900">
                 Learn more <span aria-hidden="true">→</span>
               </a>
+              
             </div>
+            )}
+            </InView>
           </div>
-
         </div>
+
         <div
           className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
           aria-hidden="true"

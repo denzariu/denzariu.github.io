@@ -1,11 +1,12 @@
-import m_1 from '../../assets/image/p_mobile_1.png'
-import m_2 from '../../assets/image/p_mobile_2.png'
-import m_3 from '../../assets/image/p_mobile_3.png'
-import w_1 from '../../assets/image/p_web_1.png'
-import w_2 from '../../assets/image/p_web_2.png'
-import w_3 from '../../assets/image/p_web_3.png'
-import BMO from '../../assets/image/bmo_anim_2.gif'
-import o_2 from '../../assets/image/o_2.png'
+import m_1 from './../../assets/image/p_mobile_1.png'
+import m_2 from './../../assets/image/p_mobile_2.png'
+import m_3 from './../../assets/image/p_mobile_3.png'
+import w_1 from './../../assets/image/p_web_1.png'
+import w_2 from './../../assets/image/p_web_2.png'
+import w_3 from './../../assets/image/p_web_3.png'
+import w_4 from './../../assets/image/p_web_4.png'
+import BMO from './../../assets/image/bmo_anim_2.gif'
+import o_2 from './../../assets/image/o_2.png'
 
 import ImageCard from '../components/ImageCard'
 import { InView } from 'react-intersection-observer'
@@ -68,7 +69,7 @@ function What() {
               desc='FitMe'
               github='https://github.com/denzariu/outfit-planner'
               playstore='https://play.google.com/store/apps/details?id=com.infitter'
-              technologies={[{name: 'React Native | SQLite', style: 'text-gray-800 bg-white'}]}
+              technologies={[{name: 'React Native | SQLite | IAP', style: 'text-gray-800 bg-white'}]}
             />
             
           </div>
@@ -106,6 +107,15 @@ function What() {
               image={w_1}
               desc='PokeDenz'
               technologies={[{name: 'React | APIs', style: 'text-gray-800 bg-white'}]}
+            />
+
+            <ImageCard
+              border
+              link='https://denzariu.github.io/sandbox/'
+              github='https://github.com/denzariu/sandbox'
+              image={w_4}
+              desc='Sandbox'
+              technologies={[{name: 'React | APIs (WIP)', style: 'text-gray-800 bg-white'}]}
             />
             
           </div>

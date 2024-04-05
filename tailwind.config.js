@@ -22,6 +22,9 @@ export default {
       },
       flex: {
         '2': '2 2 0%'
+      },
+      delay: {
+        2000: '2000ms'
       }
     },
   },
