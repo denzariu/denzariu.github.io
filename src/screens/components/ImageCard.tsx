@@ -18,21 +18,21 @@ type ImageCardProps = {
 function ImageCard(obj: ImageCardProps) {
   return (
     <InView 
-      threshold={0.05}
+      threshold={0.85}
       trackVisibility
-      triggerOnce
-      delay={150}
+      delay={100}
     >
     {({ inView, ref }) => (
     <div ref={ref} 
-      className={`h-48 sm:h-auto self-center sm:flex-1
+      className={`h-48 sm:h-auto sm:max-w-[35vw] self-center sm:flex-1
                 group hover:translate-x-8
                 transform-gpu hover:z-10  sm:hover:translate-x-0  
-                hover:scale-105 sm:hover:scale-125 xl:hover:scale-150
-                transition-all duration-300 ${inView ? 'translate-y-0 opacity-1' : 'translate-y-16 opacity-0' }`}
+                hover:scale-105 sm:hover:scale-125 2xl:hover:scale-150 
+                transition-all duration-300 before:transition-all before:duration-1000 before:ease-in-out before:h-full before:w-full before:left-0 before:top-0 sm:before:absolute before:z-0
+                 ${inView ? '' : ' sm:before:bg-[#00000033]  before:backdrop-blur-sm' }`}
         
     >
-      <img className={" rounded-lg w-full group-hover:border-2 shadow-it border-white " + (obj.border === true ? "border-2 " : "")} 
+      <img className={"rounded-lg w-full group-hover:border-2 shadow-it border-white " + (obj.border === true ? "border-2 " : "")} 
         src={obj.image} 
         alt={obj.desc} 
       />

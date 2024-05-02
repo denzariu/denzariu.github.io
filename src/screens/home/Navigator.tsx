@@ -154,7 +154,7 @@ export default function Navigator() {
       )}
 
       {/* Landing page / HOME */}
-      <div id='#home' className="relative isolate px-6 pt-14 lg:px-8">
+      <div id='#home' className="relative isolate px-6 pt-14 lg:px-8 min-h-screen">
         <InView 
           trackVisibility
           threshold={0.85}
@@ -163,15 +163,15 @@ export default function Navigator() {
         >
         {({ inView, ref }) => (
           <div ref={ref} 
-            className='absolute z-[-1] w-[100%] h-[100vh] bottom-0 top-0 right-0 left-0 overflow-x-hidden'
+            className='absolute z-[-1] w-full h-screen bottom-0 top-0 right-0 left-0 overflow-x-hidden'
           >
             <div 
-              className={`h-full w-[100%] flex items-center justify-center transition-transform duration-700 delay-[1500ms]
+              className={`h-full w-full flex items-center justify-center transition-transform duration-700 delay-[1500ms]
                 ${inView ? "translate-x-[50%]" : ""}
               `}
             >
             <img src={me} 
-              className={`self-end object-contain sm:h-full w-fit transition-all duration-300 ${inView ? 'opacity-1' : 'opacity-0 blur-3xl'}`}
+              className={`self-end object-bottom object-contain h-full pt-16 w-fit transition-all duration-300 ${inView ? 'opacity-1' : 'opacity-0 blur-3xl'}`}
             />
             </div>
           </div>
@@ -190,7 +190,7 @@ export default function Navigator() {
           />
         </div>
         <div className="mx-auto max-w-2xl py-48 sm:py-64 lg:py-64 xl:py-72">
-          <div className="flex flex-row text-left">
+          <div className="flex flex-row text-left bg-blend-difference">
 
             <InView 
               threshold={0.2}

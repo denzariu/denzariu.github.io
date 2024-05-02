@@ -5,6 +5,7 @@ import w_1 from './../../assets/image/p_web_1.png'
 import w_2 from './../../assets/image/p_web_2.png'
 import w_3 from './../../assets/image/p_web_3.png'
 import w_4 from './../../assets/image/p_web_4.png'
+import w_5 from './../../assets/image/p_web_5.png'
 import BMO from './../../assets/image/bmo_anim_2.gif'
 import o_2 from './../../assets/image/o_2.png'
 
@@ -50,7 +51,7 @@ function What() {
           >
             Mobile Dev
           </p>
-          <div className=" flex pb-[24rem] sm:pb-4 sm:mx-0 p-4 align-center justify-center flex-wrap gap-2 sm:flex-nowrap border-4 border-b-0 border-gray-800 rounded-t-lg font-semibold">
+          <div className="flex pb-[24rem] sm:pb-4 sm:mx-0 p-4 align-center justify-center flex-wrap gap-2 sm:flex-nowrap border-4 border-b-0 border-gray-800 rounded-t-lg font-semibold">
           
             <ImageCard
               image={m_1}
@@ -76,14 +77,37 @@ function What() {
         </div>
 
         {/* Web Dev */}
-        <div className="-mt-1 mx-auto max-w-4xl bg-gradient-to-br border-4 border-t-0 border-gray-800 rounded-b-lg">
+        <div className="-mt-1 mx-auto max-w-4xl bg-gradient-to-br border-4 border-t-0 border-gray-800">
           <p className='relative p-3 mx-12 lg:mx-48 rounded-xl
             text-4xl text-center font-bold tracking-tight bg-white text-gray-800 sm:text-5xl border-4 border-gray-800'
           >
             Web Dev
           </p>
-          <div className=" flex -mt-10 pt-12 pb-[20rem] sm:pb-4 sm:mx-0 p-4 align-center justify-center flex-wrap gap-3 sm:flex-nowrap bg-gray-800 border-gray-800 border-t-4 font-semibold">
+          <div className=" flex -mt-10 pt-12 sm:pb-0 sm:mx-0 p-4 align-center justify-center flex-wrap gap-3 sm:flex-nowrap bg-gray-800 border-gray-800 border-t-4 font-semibold">
           
+            
+
+            <ImageCard
+              border
+              link='https://denzariu.github.io/sandbox/'
+              github='https://github.com/denzariu/sandbox'
+              image={w_4}
+              desc='Sandbox'
+              technologies={[{name: 'React | APIs (WIP)', style: 'text-gray-800 bg-white'}]}
+            />
+
+            <ImageCard
+              border
+              link='https://denzariu.github.io/pear/'
+              github='https://github.com/denzariu/pear'
+              image={w_5}
+              desc='Sandbox'
+              technologies={[{name: 'React | GSAP', style: 'text-gray-800 bg-white'}]}
+            />
+            
+          </div>
+          <div className=" flex -mt-10 pt-12 pb-[20rem] sm:pb-4 sm:mx-0 p-4 align-center justify-center flex-wrap gap-3 sm:flex-nowrap bg-gray-800 border-gray-800 border-t-4 font-semibold">
+        
             <ImageCard
               border
               image={w_2}
@@ -109,27 +133,21 @@ function What() {
               technologies={[{name: 'React | APIs', style: 'text-gray-800 bg-white'}]}
             />
 
-            <ImageCard
-              border
-              link='https://denzariu.github.io/sandbox/'
-              github='https://github.com/denzariu/sandbox'
-              image={w_4}
-              desc='Sandbox'
-              technologies={[{name: 'React | APIs (WIP)', style: 'text-gray-800 bg-white'}]}
-            />
+
             
           </div>
+          
         </div>
 
-        <div className="mx-auto mt-20 max-w-4xl bg-gradient-to-br rounded-lg">
-          <p className='relative pb-3 mx-12 lg:mx-48 rounded-t-xl
+        <div className="mx-auto max-w-4xl">
+          <p className='relative p-3
             text-4xl text-center font-bold tracking-tight bg-gradient-to-tr from-green-300 to-fuchsia-400 via-fuchsia-200 from-20% text-white sm:text-5xl'
           >
             Others
           </p>
         </div>
 
-        <div className="mx-auto max-w-4xl rounded-md bg-gradient-to-br space-y-1 from-green-300 via-fuchsia-200 to-fuchsia-400 p-1">
+        <div className="mx-auto max-w-4xl rounded-md rounded-t-none bg-gradient-to-br space-y-1 from-green-300 via-fuchsia-200 to-fuchsia-400 p-1">
     
           {/* BMO */}
           <InView 

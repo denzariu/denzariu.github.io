@@ -47,7 +47,7 @@ function Why() {
             </div>
 
             <img className='hidden sm:flex rounded-full w-24 h-full self-end'
-              src='https://media.licdn.com/dms/image/D4E03AQFQVwnM4SxRcA/profile-displayphoto-shrink_100_100/0/1685349145993?e=1714003200&v=beta&t=LRJxb9CPKMJkFjc5yHDQZwYfXXUVU580BYkdiXnrQ90'
+              src='https://media.licdn.com/dms/image/D4E03AQFQVwnM4SxRcA/profile-displayphoto-shrink_200_200/0/1685349145993?e=1720051200&v=beta&t=yWstKMjb4Mv8QaLrSeMasFczkUqEKZPpvZVE0kOkfHk'
             />
           </div>  
         </div>
