@@ -75,6 +75,16 @@ export default function Who() {
           <div className='mt-12 flex flex-col items-center justify-center'>
             {/* Element */}
             <Job
+              title='Frontend Developer'
+              subtitle='Papel Technology'
+              description={[
+                "   As a frontend engineer for Papel, I build performant, responsive fintech apps and SaaS solutions using Next.js and Flutter.", 
+                "   I introduced TypeScript for better productivity, automated financial reports with Kubernetes cron jobs, and optimized app performance across devices.",
+                "   My work extends beyond frontend, fostering collaboration and driving efficient development across the team."
+              ]}              
+              startToEnd='2024 May - Present'
+            />
+            <Job
               title='Software Engineer'
               subtitle='Webhelp'
               description={[
@@ -87,9 +97,9 @@ export default function Who() {
               title='Salesforce Web Developer'
               subtitle='Deloitte Digital'
               description={[
-                "   Training was centered on Salesforce development and administration, held by a certified Salesforce expert, followed by internal training of APEX, LWCs, Batching & Redux.", 
+                "   Trained on Salesforce development and administration, held by a certified Salesforce expert, followed by internal training of APEX, LWCs, Batching & Redux.", 
                 "   I was part of a brand-new Salesforce SCRUM team, working for one of the global industry leaders. Our primary focus was optimizing the business customer experience by crafting tailored dashboards using APIs and Plugins.",
-                "   My expertise was frontend, with nearly 80% of UI dashboard pages created by myself, and backend development, amplifying the team's impact on customer-centric solutions"
+                "   My expertise was frontend, providing a strong communication with the designers, and then backend development, amplifying the team's impact on customer-centric solutions"
               ]}              
               startToEnd='2021 Jun - 2021 Nov'
             />

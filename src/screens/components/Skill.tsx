@@ -6,8 +6,8 @@ type SkillProps = {
 function Skill(skill: SkillProps) {
 
   return (
-    <div className=" relative
-      w-20 h-20 p-3 lg:p-4 lg:size-24 rounded-3xl bg-gradient-to-br from-gray-800 to-[#36335e]
+    <div className="relative *:rounded-xl
+      w-20 h-20 p-3 lg:p-4 lg:size-24 rounded-2xl bg-gradient-to-br from-gray-800 to-[#36335e]
       hover:animate-[pulse_0.7s_ease-in-out] flex flex-col justify-center items-center
     ">
       
